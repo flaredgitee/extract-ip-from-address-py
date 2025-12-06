@@ -16,6 +16,12 @@ echo "192.168.1.1:8080" | uv run src/extract_ip_from_address/app.py
 uv tool install -e .
 ```
 
+Then you can use the following command instead
+
+```shell
+echo "192.168.1.1:8080" | extract-ip-from-address
+```
+
 ## Function
 
 - `extract_ip_from_address(address: str) -> str`: returns the extracted IP portion for inputs like `192.168.1.1:8080`, `[2001:db8::1]:8080`, `[2001:db8::1]`, or `2001:db8::1`. If the input does not match known patterns, the input is returned unchanged.
