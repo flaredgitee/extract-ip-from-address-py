@@ -1,20 +1,21 @@
 [project]
-name = "extract-ip"
+name = "extract-ip-from-address"
 version = "0.1.0"
+authors = [{ name = "flaredgitee", email = "equalityedge@qq.com" }]
 description = "Extract IP from an address string."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
 
 [project.scripts]
-extract-ip-from-address = "extract-ip-from-address.app:main"
+extract-ip-from-address = "extract_ip_from_address.app:main"
 
 [tool.setuptools.package-dir]
 "" = "src"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["extract-ip-from-address*"]
+include = ["extract_ip_from_address*"]
 
 [tool.poetry]
-packages = [{ include = "extract-ip-from-address", from = "src" }]
+packages = [{ include = "extract_ip_from_address", from = "src" }]
