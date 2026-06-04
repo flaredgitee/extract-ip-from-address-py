@@ -1,3 +1,6 @@
+**This repository is archived.
+You may use the new one written in Rust instead:** [extract-field-from-address](https://github.com/flaredgitee/extract-field-from-address)
+
 # Extract IP From Address
 
 A really simple Python CLI utility to extract the IP portion from address strings that may include ports. Supports IPv4 and IPv6 (bracketed) formats.
